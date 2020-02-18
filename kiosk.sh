@@ -11,7 +11,7 @@ sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium
 
 sleep 15 
 
-/usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk https://bit.ly/csee-foyer &
+/usr/bin/chromium-browser --check-for-update-interval=604800 --noerrdialogs --disable-infobars --kiosk https://bit.ly/csee-foyer &
 
 while true; do
 	sleep 300
