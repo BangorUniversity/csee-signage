@@ -8,4 +8,6 @@ sudo systemctl disable kiosk.service
 sudo cp kiosk.service /lib/systemd/system/kiosk.service
 sudo systemctl enable kiosk.service
 
+sudo apt-get install libcec3 cec-utils
+
 sudo bash install_cron.sh
