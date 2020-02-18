@@ -14,6 +14,8 @@ sleep 15
 /usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk https://bit.ly/csee-foyer &
 
 while true; do
+	sleep 300
+
 	wget -q --spider http://google.com
 
 	if [ $? -eq 0 ]; then
@@ -21,7 +23,5 @@ while true; do
 		xdotool keydown ctrl+r; xdotool keyup ctrl+r;
 	else
 		echo "No connection, not refreshing"
-	fi
-	
-	sleep 60
+	fi	
 done
