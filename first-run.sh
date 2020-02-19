@@ -13,7 +13,8 @@ sudo apt -y autoremove
 sudo apt -y install xdotool unclutter sed git libcec3 cec-utils
 
 cd /home/pi/scsee-signage/
-sudo bash update.sh
+sudo bash git-reset.sh
+sudo bash service-update.sh
 
 sudo bash /usr/lib/raspi-config/init_resize.sh
 
